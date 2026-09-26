@@ -1,0 +1,8 @@
+# Netlify detects Next.js and selects its OpenNext adapter automatically.
+# Configure server credentials in Netlify environment settings, never here.
+[build]
+  command = "pnpm build"
+
+[build.environment]
+  NODE_VERSION = "24"
+  PNPM_FLAGS = "--shamefully-hoist"
